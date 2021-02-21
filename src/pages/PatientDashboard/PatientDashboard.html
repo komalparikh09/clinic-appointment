@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="elements.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+    <script type="text/javascript" src="util.js"></script>
+    <title>Patient Dashboard</title>
+</head>
+
+<body>
+    <h2>Patient Dashboard</h2>
+    <br />
+    <table border="0" width="90%" cellspacing="0" cellpadding="0">
+        <col width="100%" />
+        <tr>
+            <td class="formFirstCol">
+                <input type="button" id="btnBookAppt" class="greenBtn" value="Book New Appointment" />
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <table border="1" width="90%" style="border-collapse: collapse;" cellspacing="5" cellpadding="5">
+        <col width="100%" />
+        <tr>
+            <td>
+                <table border="0" cellspacing="10" cellpadding="10" width="100%">
+                    <col width="30%" />
+                    <col width="40%" />
+                    <col width="30%" />
+                    <tr>
+                        <td class="formFirstCol" style="vertical-align: middle;">
+                            Patient Phone Number
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="text" class="textInput" id="patientPhone"
+                                placeholder="Enter 10 digit mobile number" />
+                        </td>
+                        <td style="text-align: center;">
+                            <input type="button" id="btnGetDetails" class="GetDetailsBtn" value="Get Details" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <br />
+    <h4>Future Appointments</h4>
+    <table border="0" width="90%" cellspacing="0" cellpadding="0" id="tblFutureAppt" class="display">
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="10%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <thead>
+            <tr>
+                <th>
+
+                </th>
+                <th>
+                    Doctor ID
+                </th>
+                <th>
+                    Doctor Name
+                </th>
+                <th>
+                    Specialization
+                </th>
+                <th>
+                    Appointment Date
+                </th>
+                <th>
+                    Action
+                </th>
+                <th>
+                    Doctor Phone Number
+                </th>
+                <th>
+                    Doctor Total Experience
+                </th>
+                <th>
+                    Doctor Working Days
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    A
+                </td>
+                <td>
+                    B
+                </td>
+                <td>
+                    C
+                </td>
+                <td>
+                    D
+                </td>
+                <td>
+                    E
+                </td>
+                <td>
+                    F
+                </td>
+                <td>
+                    G
+                </td>
+                <td>
+                    H
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    <br />
+    <br />
+    <h4>Past Appointments</h4>
+    <table border="0" width="90%" cellspacing="0" cellpadding="0" id="tblPastAppt" class="display">
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <col width="20%" />
+        <thead>
+            <tr>
+                <th>
+                    
+                </th>
+                <th>
+                    Doctor ID
+                </th>
+                <th>
+                    Doctor Name
+                </th>
+                <th>
+                    Specialization
+                </th>
+                <th>
+                    Appointment Date
+                </th>
+                <th>
+                    Doctor Phone Number
+                </th>
+                <th>
+                    Doctor Total Experience
+                </th>
+                <th>
+                    Doctor Working Days
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+
+                </td>
+                <td>
+                    A
+                </td>
+                <td>
+                    B
+                </td>
+                <td>
+                    C
+                </td>
+                <td>
+                    D
+                </td>
+                <td>
+                    E
+                </td>
+                <td>
+                    F
+                </td>
+                <td>
+                    G
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

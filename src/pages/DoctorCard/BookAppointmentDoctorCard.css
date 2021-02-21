@@ -1,0 +1,15 @@
+.edit-doctor__form {
+    width: 90%;
+    margin: auto;
+  }
+  
+  @media (min-width: 768px) {
+    .edit-doctor__form {
+      width: 40rem;
+    }
+  }
+
+  .add-doctor__form {
+    width: 90%;
+    margin: auto;
+  }

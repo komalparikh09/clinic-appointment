@@ -1,0 +1,83 @@
+.doctor-person {
+  display: inline-block;/*flex;*/
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+  height: 200px;
+  margin: 1rem 1rem;
+  position: relative;
+}
+
+.doctor-person__image {
+  width: 35%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  margin-right: 5%;
+}
+
+.doctor-person__content {
+  width: 60%;
+}
+
+.doctor-person__content h1 {
+  font-size: 1.25rem;
+  color: #6200ff;
+  margin: 0.5rem 0;
+}
+
+.doctor-person__content h2 {
+  font-size: 1rem;
+  color: #292929;
+  margin: 0;
+}
+
+.doctor-person__controls {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  text-align: right;
+}
+
+.doctor-person__controls button,
+.doctor-person__controls a {
+  text-decoration: none;
+  cursor: pointer;
+  font: inherit;
+  border: none;
+  background: transparent;
+  color: #6200ff;
+  padding: 0;
+  margin: 0 0.5rem;
+}
+
+.doctor-person__controls button:hover,
+.doctor-person__controls button:active,
+.doctor-person__controls a:hover,
+.doctor-person__controls a:active {
+  color: #320083;
+}
+
+.buttonRight {
+  width: auto !important;
+  float: right;
+  padding-right: 1px;
+  padding-top: 7px;
+}
+
+.doctor-card {
+  display: inline-block;
+  width: 400px;
+  height: auto;
+  overflow-wrap: break-word;
+  background-color: #eeecc4;
+}
+
+.doctor-card-name {
+  background-color: #b2dc5f;
+  width: 400px;
+  height: 50px;
+  display: inline-block;
+}
+
+.doctor-card-text {
+  padding-left: 15px;
+}

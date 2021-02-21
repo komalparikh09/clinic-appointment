@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="elements.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="util.js"></script>
+    <title>Doctor Registration</title>
+</head>
+
+<body>
+    <h2>Doctor Registration</h2>
+    <table border="1" width="90%" style="border-collapse: collapse;" cellspacing="5" cellpadding="5">
+        <col width="100%" />
+        <tr>
+            <td style="text-align: center;">
+                <table border="0" cellspacing="10" cellpadding="10" width="100%">
+                    <col width="30%" />
+                    <col width="70%" />
+                    <tr>
+                        <td class="formFirstCol">
+                            Doctor Name :
+                        </td>
+                        <td style="text-align: left;">
+                            <input type="text" class="textInput" id="doctorName"
+                                placeholder="Enter name of the Doctor" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formFirstCol">
+                            Phone Number :
+                        </td>
+                        <td style="text-align: left;">
+                            <input type="text" class="textInput" id="doctorPhone"
+                                placeholder="Enter valid phone number" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formFirstCol">
+                            Specialization :
+                        </td>
+                        <td style="text-align: left;">
+                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                <col width="30%" />
+                                <col width="30%" />
+                                <col width="40%" />
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMbbs" name="chkMbbs" value="MBBS" />
+                                        <label for="chkMbbs">MBBS</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdRadiology" name="chkMdRadiology"
+                                            value="MDRadiology" />
+                                        <label for="chkMdRadiology">MD-Radiology</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdAnaesthesia" name="chkMdAnaesthesia"
+                                            value="MDAnaesthesia" />
+                                        <label for="chkMdAnaesthesia">MD-Anaesthesia</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdPhysician" name="chkMdPhysician"
+                                            value="MDPhysician" />
+                                        <label for="chkMdPhysician">MD-Physician</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdGynaecology" name="chkMdGynaecology"
+                                            value="MDGynaecology" />
+                                        <label for="chkMdGynaecology">MD-Gynaecology</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdOrthopedics" name="chkMdOrthopedics"
+                                            value="MDOrthopedics" />
+                                        <label for="chkMdOrthopedics">MD-Orthopedics</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdEnt" name="chkMdEnt" value="MDENT" />
+                                        <label for="chkMdEnt">MD-ENT</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdPathology" name="chkMdPathology"
+                                            value="MDPathology" />
+                                        <label for="chkMdPathology">MD-Pathology</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMsPlasticSurgery" name="chkMsPlasticSurgery"
+                                            value="MSPlasticSurgery" />
+                                        <label for="chkMsPlasticSurgery">MS-Plastic Surgery</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdCardiology" name="chkMdCardiology"
+                                            value="MDCardiology" />
+                                        <label for="chkMdCardiology">MD-Cardiology</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMdMicrobiology" name="chkMdMicrobiology"
+                                            value="MDMicrobiology" />
+                                        <label for="chkMdMicrobiology">MD-Microbiology</label>
+                                    </td>
+                                    <td style="text-align: left;">
+                                        <input type="checkbox" id="chkMsUrology" name="chkMsUrology"
+                                            value="MSUrology" />
+                                        <label for="chkMsUrology">MS-Urology</label>
+                                    </td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formFirstCol">
+                            Total Experience :
+                        </td>
+                        <td style="text-align: left;">
+                            <input type="text" class="textInput" id="totalExperience"
+                                placeholder="Enter total experience in years" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formFirstCol">
+                            Working Days :
+                        </td>
+                        <td style="text-align: left;">
+                            <button type="button" id="btnMon" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Mon</span></button>
+                            <button type="button" id="btnTue" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Tue</span></button>
+                            <button type="button" id="btnWed" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Wed</span></button>
+                            <button type="button" id="btnThu" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Thu</span></button>
+                            <button type="button" id="btnFri" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Fri</span></button>
+                            <button type="button" id="btnSat" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Sat</span></button>
+                            <button type="button" id="btnSun" class="daysBox switchColor"
+                                onclick="selectDay(this.id)"><span class="daysBoxText">Sun</span></button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="formFirstCol">
+                            Visiting Hours :
+                        </td>
+                        <td style="text-align: left;">
+                            <label>From : </label>
+                            <input type="text" class="textInputSmall" id="fromVisitingHour"
+                                placeholder="Click to show timepicker" width="150px" height="30px" />
+                            <label style="padding-left: 40px;">To : </label>
+                            <input type="text" class="textInputSmall" id="toVisitingHour"
+                                placeholder="Click to show timepicker" width="150px" height="30px" />
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+        <col width="50%"/>
+        <col width="50%"/>
+        <tr>
+            <td style="text-align: center;">
+                <input type="submit" id="btnRegister" class="blueBtn" value="Register Me"/>
+            </td>
+            <td style="text-align: center;">
+                <input type="submit" id="btnCancel" class="blueBtn" value="Cancel"/>
+            </td>
+        </tr>
+    </table>
+</body>
+
+</html>

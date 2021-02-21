@@ -1,0 +1,15 @@
+.edit-product__form {
+  width: 90%;
+  margin: auto;
+}
+  
+  @media (min-width: 768px) {
+    .edit-product__form {
+      width: 40rem;
+    }
+  }
+
+.book-appointment__form {
+  width: 90%;
+  margin: auto;
+}

@@ -1,0 +1,11 @@
+.doctors {
+    width: 95%;
+    margin: auto;
+}
+
+
+@media (min-width: 768px) {
+    .doctors {
+        width: 80%;
+    }   
+}

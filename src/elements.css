@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial';
+}
+
+.formFirstCol {
+    text-align: right;
+    vertical-align: text-top;
+    font-weight: bold;
+}
+
+.daysBox {
+    display: inline-block;
+    background-color: #D3D3D3;
+    border-color: #D3D3D3;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    color: #000000;
+    text-align: center;
+    margin: 2px;
+    outline: none;
+}
+
+.daysBoxText {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.daysBoxSelected {
+    display: inline-block;
+    background-color: #7CFC00;
+    border-color: #7CFC00;
+    height: 50px;
+    width: 50px;
+    border-radius: 10px;
+    color: #ffffff;
+    text-align: center;
+    margin: 2px;
+    outline: none;
+}
+
+.textInput {
+    height: 30px;
+    width: 300px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+}
+
+.textInputSmall {
+    height: 30px;
+    width: 200px;
+    border: 1px solid #D3D3D3;
+    border-radius: 3px;
+}
+
+.blueBtn {
+    text-align: center;
+    background-color: #155BCB;
+    border-color: #155BCB;
+    color: #ffffff;
+    height: 30px;
+    width: 150px;
+    outline: none;
+}
+
+.tableHeader {
+    background-color: #5FBD05;
+    color: #000000;
+}
+
+.greenBtn {
+    height: 40px;
+    width: 200px;
+    text-align: center;
+    color: #000000;
+    background-color: #5FBD05;
+    font-weight: bold;
+    border: 1px solid #5FBD05;
+    border-radius: 3px;
+    outline: none;
+}
+
+.GetDetailsBtn {
+    height: 40px;
+    width: 150px;
+    text-align: center;
+    color: #000000;
+    background-color: #5FBD05;
+    font-weight: bold;
+    border: 1px solid #5FBD05;
+    border-radius: 3px;
+    outline: none;
+}
+
+.buttonRight {
+    align-self: right;
+    float: right;
+    padding-right: 1px;
+    padding-top: 7px;
+}
+
+.doctor-card {
+    display: inline-block;
+    width: 400px;
+    height: 200px;
+    background-color: #eeecc4;
+}
+
+.doctor-card-name {
+    background-color: #b2dc5f;
+    width: 400px;
+    height: 50px;
+    display: inline-block;
+}
+
+.doctor-card-text {
+    padding-left: 15px;
+}
+
+/* td.details-control {
+    background: url('../resources/details_open.png') no-repeat center center;
+    cursor: pointer;
+}
+tr.shown td.details-control {
+    background: url('../resources/details_close.png') no-repeat center center;
+} */
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    padding-left: 10px;
+    color: #D3D3D3;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    padding-left: 10px;
+    color: #D3D3D3;
+    opacity: 1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    padding-left: 10px;
+    color: #D3D3D3;
+    opacity: 1
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    padding-left: 10px;
+    color: #D3D3D3;
+}

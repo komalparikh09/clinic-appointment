@@ -1,0 +1,11 @@
+.doctorCards {
+    width: 95%;
+    margin: auto;
+}
+
+
+@media (min-width: 768px) {
+    .doctorCards {
+        width: 90%;
+    }   
+}
